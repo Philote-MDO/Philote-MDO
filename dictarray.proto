@@ -15,17 +15,13 @@
 */
 syntax = "proto3";
 
+import "array.proto";
+
 
 message ArrayDict {
     // function array identifier, used to determine which array is being sent
     string id = 1;
     
     // array shape
-    repeated int64 shape = 101;
-
-    // indices of the data location
-    repeated int64 indices = 201;
-
-    // data
-    bytes data = 301;
+    repeated Array data = 101;
 }
