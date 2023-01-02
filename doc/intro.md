@@ -1,4 +1,4 @@
-# Philote
+# Introduction
 
 Philote is a datastructure standard for distributed multidisciplinary design
 optimization (MDO) frameworks. It was developed specifically for the AnsibleMDO

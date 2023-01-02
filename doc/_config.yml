@@ -4,7 +4,7 @@
 title: Philote
 author: Christopher A. Lupp
 copyright: "2022"
-logo: graphics/logos/philote_logo.svg
+logo: graphics/logos/philote.svg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -32,4 +32,5 @@ html:
   use_issues_button: true
   use_repository_button: true
   extra_navbar: An MDO Project
+  # extra_footer: "Test"
   announcement: "Now with 20% more flavor!"
