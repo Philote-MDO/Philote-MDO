@@ -4,5 +4,9 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
+- file: history
+- file: technologies
+- file: languages
 - file: notebooks
+- file: partners
+- file: licensing
