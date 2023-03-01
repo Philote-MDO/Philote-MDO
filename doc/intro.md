@@ -29,7 +29,7 @@ another MDO framework. Well, mainly because the existing frameworks do not cover
 decentralized computing (or commercial ones that do, do not offer robust
 gradient-based capablilities).
 
-Being decentralized requires some means of communication between the main
+Being decentralized requires a means of communication between the main
 framework and the individual analysis disciplines. Moreover, the individual
 disciplines may use a plethora of programming languages, some of which may not
 easily wrap into Python, as required by both CSDL and OpenMDAO. Therefore,
