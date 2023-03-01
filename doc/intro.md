@@ -58,21 +58,6 @@ Game, Speaker for the Dead, etc.). In the series, Philotes are the most
 elementary building block in the universe and are used to enable faster than
 light communications over vast distances via the ansible network.
 
-
-## License Overview and Philosophy
-
-Licensing is an important topic in software, especially for tools that are meant
-to be used within larger frameworks. Because licensing can be a reason for or
-against using a piece of software, this section provides a brief overview of the
-license governing the use of Philote and why this particular license was chosen.
-In addition, there is a separate chapter on licensing.
-
-Philote is licensed under the Apache version 2 open-source license. This enables
-Philote to be used freely, while allowing closed source applications to utilize
-it without concerns about copyleft (viral) licensing. While copyleft licenses
-serve a purpose, in this case, they would stand in the way of adoption of
-Philote.
-
 <!-- :::{sidebar} My sidebar title
 My sidebar content
 ::: -->

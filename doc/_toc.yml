@@ -6,6 +6,9 @@ root: intro
 chapters:
 - file: history
 - file: technologies
+  sections:
+  - file: data
+  - file: explicit
+  - file: implicit
 - file: languages
-- file: partners
 - file: licensing
