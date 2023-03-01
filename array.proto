@@ -21,7 +21,7 @@ syntax = "proto3";
 */
 message DoubleArray {
     // array shape
-    repeated int64 index = 1;
+    repeated int64 shape = 1;
 
     // continuous data
     repeated double data = 2;
@@ -33,7 +33,7 @@ message DoubleArray {
 */
 message IntArray {
     // array shape
-    repeated int64 index = 1;
+    repeated int64 shape = 1;
 
     // continuous data
     repeated int64 data = 2;
