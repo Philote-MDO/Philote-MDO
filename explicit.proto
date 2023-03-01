@@ -21,7 +21,7 @@ import "data.proto";
 // Definition of the generic Explicit Component RPC
 service ExplicitComponent {
     // Sets up the component
-    rpc Setup (Stream VariableMetaData) returns (google.protobuf.Empty) {}
+    rpc Setup (google.protobuf.Empty) returns (Stream VariableMetaData) {}
 
     // Calls the component Compute function
     rpc Compute (Stream Chunk) returns (Stream Chunk) {}
