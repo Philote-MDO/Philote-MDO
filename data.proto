@@ -22,14 +22,17 @@ import "array.proto";
     Definition of variable metadata.
 */
 message VariableMetaData {
+    // flag to identify the variable as an input
+    bool input = 1;
+    
     // variable name
-    string name = 1;
+    string name = 2;
 
     // variable shape
-    repeated int64 id = 2;
+    repeated int64 id = 3;
 
     // variable units
-    string units = 3;
+    string units = 4;
 }
 
 /*
