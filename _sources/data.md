@@ -3,6 +3,7 @@
 This section describes the data conventions provided by Philote.
 
 
+
 ## Array Types
 
 Philote provides two different types of arrays: one for continuous and the other
