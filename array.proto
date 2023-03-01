@@ -16,10 +16,25 @@
 syntax = "proto3";
 
 
-message Array {
+/*
+    Definition of a double array type.
+*/
+message DoubleArray {
     // array shape
-    repeated int64 shape = 101;
+    repeated int64 shape = 1;
 
-    // data
-    bytes data = 201;
+    // continuous data
+    repeated double data = 2;
+}
+
+
+/*
+    Definition of a integer array type.
+*/
+message IntArray {
+    // array shape
+    repeated int64 shape = 1;
+
+    // continuous data
+    repeated int64 data = 2;
 }
