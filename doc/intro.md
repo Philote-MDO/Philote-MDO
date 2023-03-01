@@ -16,10 +16,16 @@ bindings, which enable those frameworks to call remote analysis disciplines.
 
 As previously mentioned, Philote is a foundational piece of software written for
 the Ansible MDO framework. Without going into more detail about this framework,
-a central aspect it addresses is decentralized computing. Given that the
-aforementioned CSDL and OpenMDAO frameworks exist (along with several commercial
-offerings), it would be reasonable to ask why the world needs another MDO
-framework. Well, mainly because the existing frameworks do not cover
+a central aspect it addresses is decentralized computing. This requires a set of
+definitions for creating and communicating with decentralized disciplines.
+Moreover, Philote is intended to be a standard that supports many MDO
+frameworks. Ubiquitous support of frameworks enables discipline developers to
+develop *one* MDO interface that can be used with many MDO frameworks, thereby
+decoupling the framework and discipline development cycles.
+
+Given that the aforementioned CSDL and OpenMDAO frameworks exist (along with
+several commercial offerings), it would be reasonable to ask why the world needs
+another MDO framework. Well, mainly because the existing frameworks do not cover
 decentralized computing (or commercial ones that do, do not offer robust
 gradient-based capablilities).
 
@@ -50,7 +56,7 @@ aren't obviously discernable. The name "Philote" was chosen because of its
 relationship to the ansible network in Orson Scott Card's Ender novels (Ender's
 Game, Speaker for the Dead, etc.). In the series, Philotes are the most
 elementary building block in the universe and are used to enable faster than
-light communications via the ansible network.
+light communications over vast distances via the ansible network.
 
 
 ## License Overview and Philosophy
@@ -61,7 +67,11 @@ against using a piece of software, this section provides a brief overview of the
 license governing the use of Philote and why this particular license was chosen.
 In addition, there is a separate chapter on licensing.
 
-Philote is licensed under the Apache version 2 open-source license.
+Philote is licensed under the Apache version 2 open-source license. This enables
+Philote to be used freely, while allowing closed source applications to utilize
+it without concerns about copyleft (viral) licensing. While copyleft licenses
+serve a purpose, in this case, they would stand in the way of adoption of
+Philote.
 
 <!-- :::{sidebar} My sidebar title
 My sidebar content

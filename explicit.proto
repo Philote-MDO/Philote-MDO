@@ -1,5 +1,5 @@
 /*
-    Copyright 2022 Christopher A. Lupp
+    Copyright 2022-2023 Christopher A. Lupp
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -15,22 +15,17 @@
 */
 syntax = "proto3";
 
-import "chunk.proto";
-import "setup.proto";
-import "array.proto";
+import "data.proto";
 
 
 // Definition of the generic Explicit Component RPC
 service ExplicitComponent {
-    // Initializes the component
-    // rpc Initialize (stream Options) returns (stream HelloReply) {}
-
     // Sets up the component
-    rpc Setup (SetupInputs) returns (stream SetupOutputs) {}
+    rpc Setup (Stream VariableMetaData) returns (google.protobuf.Empty) {}
 
     // Calls the component Compute function
-    rpc RequestCompute (stream Chunk) returns (stream Chunk) {}
+    rpc Compute (Stream Chunk) returns (Stream Chunk) {}
 
     // Calls the component ComputePartials function
-    rpc RequestComputePartials (stream Chunk) returns (stream Chunk) {}
+    rpc ComputePartials (stream Chunk) returns (stream Chunk) {}
 }
