@@ -47,20 +47,15 @@ message Variables {
 }
 
 /*
-    Definition of a pair of strings (used in the partials data).
-*/
-message Pair {
-    // name of the function
-    string f = 1;
-
-    // name of the variable
-    string x = 2;
-}
-
-/*
     Definition of partials data.
 */
 message Partials {
+    // name of the function
+    repeated string f = 1;
+
+    // name of the variable
+    repeated string x = 2;
+
     // map of all partials arrays
-    map <Pair, DoubleArray> data = 1;
+    repeated DoubleArray data = 3;
 }
