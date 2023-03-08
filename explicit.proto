@@ -15,16 +15,19 @@
 */
 syntax = "proto3";
 
+import "google/protobuf/empty.proto";
 import "data.proto";
+import "chunk.proto";
+
 
 
 // Definition of the generic Explicit Component RPC
 service ExplicitComponent {
     // Sets up the component
-    rpc Setup (google.protobuf.Empty) returns (Stream VariableMetaData) {}
+    rpc Setup (google.protobuf.Empty) returns (stream VariableMetaData) {}
 
     // Calls the component Compute function
-    rpc Compute (Stream Chunk) returns (Stream Chunk) {}
+    rpc Compute (stream Chunk) returns (stream Chunk) {}
 
     // Calls the component ComputePartials function
     rpc ComputePartials (stream Chunk) returns (stream Chunk) {}
