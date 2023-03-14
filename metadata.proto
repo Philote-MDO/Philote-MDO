@@ -15,8 +15,6 @@
 */
 syntax = "proto3";
 
-import "array.proto";
-
 
 /*
     Definition of variable metadata.
@@ -33,29 +31,4 @@ message VariableMetaData {
 
     // variable units
     string units = 4;
-}
-
-/*
-    Definition of data.
-*/
-message Variables {
-    // continuous data
-    map <string, DoubleArray> continuous = 1;
-
-    // discrete data
-    map <string, IntArray> discrete = 2;
-}
-
-/*
-    Definition of partials data.
-*/
-message Partials {
-    // name of the function
-    repeated string f = 1;
-
-    // name of the variable
-    repeated string x = 2;
-
-    // map of all partials arrays
-    repeated DoubleArray data = 3;
 }

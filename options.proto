@@ -1,5 +1,5 @@
 /*
-    Copyright 2022 Christopher A. Lupp
+    Copyright 2022-2023 Christopher A. Lupp
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -15,32 +15,13 @@
 */
 syntax = "proto3";
 
-
 /*
-    Definition of a double array (slice) type.
+    Stream options message type
 */
-message DoubleArray {
-    // starting index
-    int64 start = 1;
+message Options {
+    // maximum number of doubles per array slice
+    int64 num_double = 1;
 
-    // ending index
-    int64 end = 2;
-
-    // continuous data
-    repeated double data = 3;
-}
-
-
-/*
-    Definition of a integer array (slice) type.
-*/
-message IntArray {
-    // starting index
-    int64 start = 1;
-
-    // ending index
-    int64 end = 2;
-
-    // continuous data
-    repeated int64 data = 3;
+    // maximum number of integers per array slice
+    int64 num_int = 2;
 }
