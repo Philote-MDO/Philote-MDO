@@ -16,8 +16,8 @@
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
-import "google/protobuf/any.proto";
-import "data.proto";
+import "array.proto";
+import "metadata.proto";
 import "options.proto";
 
 
@@ -25,14 +25,14 @@ import "options.proto";
 // Definition of the generic Explicit Component RPC
 service ExplicitComponent {
     // RPC to set remote streaming options
-    rpc SetOptions(Options) returns () {google.protobuf.Empty}
+    rpc SetStreamOptions(Options) returns () {google.protobuf.Empty}
 
     // Sets up the component
     rpc Setup (google.protobuf.Empty) returns (stream VariableMetaData) {}
 
     // Calls the component Compute function
-    rpc Compute (stream google.protobuf.Any) returns (stream google.protobuf.Any) {}
+    rpc Compute (stream Array) returns (stream Array) {}
 
     // Calls the component ComputePartials function
-    rpc ComputePartials (stream google.protobuf.Any) returns (stream google.protobuf.Any) {}
+    rpc ComputePartials (stream Array) returns (stream Array) {}
 }
