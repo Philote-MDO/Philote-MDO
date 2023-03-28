@@ -30,6 +30,9 @@ service ExplicitComponent {
     // Sets up the component
     rpc Setup (google.protobuf.Empty) returns (stream VariableMetaData) {}
 
+    // Sets up the component partials
+    rpc SetupPartials (google.protobuf.Empty) returns (stream PartialsMetaData) {}
+
     // Calls the component Compute function
     rpc Compute (stream Array) returns (stream Array) {}
 

@@ -35,3 +35,13 @@ message VariableMetaData {
     // variable units
     string units = 5;
 }
+
+/*
+    Definition of partials metadata.
+*/
+message PartialsMetaData {
+    // variable name
+    string name = 1;
+
+    string subname = 2;
+}
