@@ -16,8 +16,12 @@
 syntax = "proto3";
 
 /*
-    Chunk message type
+    Stream options message type
 */
-message Chunk {
-    bytes data = 1;
+message Options {
+    // maximum number of doubles per array slice
+    int64 num_double = 1;
+
+    // maximum number of integers per array slice
+    int64 num_int = 2;
 }
