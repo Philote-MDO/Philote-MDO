@@ -15,8 +15,6 @@
 */
 syntax = "proto3";
 
-import "array.proto";
-
 
 /*
     Definition of variable metadata.
@@ -24,43 +22,26 @@ import "array.proto";
 message VariableMetaData {
     // flag to identify the variable as an input
     bool input = 1;
+
+    // flag to identify if the variable is discrete
+    bool discrete = 2;
     
     // variable name
-    string name = 2;
+    string name = 3;
 
     // variable shape
-    repeated int64 id = 3;
+    repeated int64 shape = 4;
 
     // variable units
-    string units = 4;
+    string units = 5;
 }
 
 /*
-    Definition of data.
+    Definition of partials metadata.
 */
-message Variables {
-    // continuous data
-    map <string, DoubleArray> continuous = 1;
+message PartialsMetaData {
+    // variable name
+    string name = 1;
 
-    // discrete data
-    map <string, IntArray> discrete = 2;
-}
-
-/*
-    Definition of a pair of strings (used in the partials data).
-*/
-message Pair {
-    // name of the function
-    string f = 1;
-
-    // name of the variable
-    string x = 2;
-}
-
-/*
-    Definition of partials data.
-*/
-message Partials {
-    // map of all partials arrays
-    map <Pair, DoubleArray> data = 1;
+    string subname = 2;
 }
