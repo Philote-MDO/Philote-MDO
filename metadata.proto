@@ -16,15 +16,21 @@
 syntax = "proto3";
 
 
+enum VariableType {
+    kInput = 0;
+    kDiscreteInput = 1;
+    kResidual = 2;
+    kOutput = 3;
+    kDiscreteOutput = 4;
+}
+
+
 /*
     Definition of variable metadata.
 */
 message VariableMetaData {
-    // flag to identify the variable as an input
+    // enum to identify the variable type
     bool input = 1;
-
-    // flag to identify if the variable is discrete
-    bool discrete = 2;
     
     // variable name
     string name = 3;
