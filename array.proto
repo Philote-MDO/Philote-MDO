@@ -15,6 +15,8 @@
 */
 syntax = "proto3";
 
+import "metadata.proto";
+
 
 /*
     Definition of a double array (slice) type.
@@ -32,9 +34,12 @@ message Array {
     // ending index
     int64 end = 4;
 
+    // flag for if this is an input or output
+    VariableType type = 5;
+
     // continuous data
-    repeated double continuous = 5;
+    repeated double continuous = 6;
 
     // discrete data
-    repeated double discrete = 6;
+    repeated double discrete = 7;
 }

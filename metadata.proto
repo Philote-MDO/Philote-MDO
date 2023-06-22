@@ -30,7 +30,7 @@ enum VariableType {
 */
 message VariableMetaData {
     // enum to identify the variable type
-    bool input = 1;
+    VariableType type = 1;
     
     // variable name
     string name = 3;
