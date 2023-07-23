@@ -18,20 +18,22 @@ syntax = "proto3";
 package philote;
 
 import "google/protobuf/empty.proto";
-import "array.proto";
 import "metadata.proto";
 import "options.proto";
 
 
 
-// Definition of the generic Explicit Discipline RPC
-service ImplicitDiscipline {
-    // Calls the discipline Compute function
-    rpc Residuals (stream Array) returns (stream Array) {}
+// Generic Discipline Definition
+// This service is never used on its own. It will always be used in a base class
+// or implementation. Base classes are necessary to avoid code duplication in
+// bindings for implicit and explicit disciplines.
+service Discipline {
+    // RPC to set remote streaming options
+    rpc SetStreamOptions(philote.Options) returns (google.protobuf.Empty) {}
 
-    // Calls the discipline RPC that solves the nonlinear equations
-    rpc Solve (stream Array) returns (stream Array) {}
+    // Sets up the component
+    rpc DefineVariables (google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
 
-    // Calls the discipline ComputePartials function
-    rpc ResidualGradients (stream Array) returns (stream Array) {}
+    // Sets up the component partials
+    rpc DefinePartials (google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
 }

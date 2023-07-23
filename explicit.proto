@@ -26,15 +26,6 @@ import "options.proto";
 
 // Definition of the generic Explicit Component RPC
 service ExplicitDiscipline {
-    // RPC to set remote streaming options
-    rpc SetStreamOptions(Options) returns (google.protobuf.Empty) {}
-
-    // Sets up the component
-    rpc DefineVariables (google.protobuf.Empty) returns (stream VariableMetaData) {}
-
-    // Sets up the component partials
-    rpc DefinePartials (google.protobuf.Empty) returns (stream PartialsMetaData) {}
-
     // Calls the component Compute function
     rpc Functions (stream Array) returns (stream Array) {}
 
