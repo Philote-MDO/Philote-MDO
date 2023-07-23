@@ -15,6 +15,8 @@
 */
 syntax = "proto3";
 
+package philote;
+
 import "metadata.proto";
 
 
@@ -23,10 +25,10 @@ import "metadata.proto";
 */
 message Array {
     // array name (optional)
-    optional string name = 1;
+    string name = 1;
 
     // array sub-name (optional)
-    optional string subname = 2;
+    string subname = 2;
 
     // starting index
     int64 start = 3;
