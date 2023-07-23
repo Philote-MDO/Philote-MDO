@@ -18,9 +18,7 @@ syntax = "proto3";
 package philote;
 
 import "google/protobuf/empty.proto";
-import "metadata.proto";
-import "options.proto";
-
+import "data.proto";
 
 
 // Generic Discipline Definition
@@ -29,7 +27,7 @@ import "options.proto";
 // bindings for implicit and explicit disciplines.
 service Discipline {
     // RPC to set remote streaming options
-    rpc SetStreamOptions(philote.Options) returns (google.protobuf.Empty) {}
+    rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
 
     // Sets up the component
     rpc DefineVariables (google.protobuf.Empty) returns (stream philote.VariableMetaData) {}

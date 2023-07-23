@@ -17,7 +17,54 @@ syntax = "proto3";
 
 package philote;
 
-import "metadata.proto";
+
+/*
+    Stream options message type
+*/
+message StreamOptions {
+    // maximum number of doubles per array slice
+    int64 num_double = 1;
+
+    // maximum number of integers per array slice
+    int64 num_int = 2;
+}
+
+
+enum VariableType {
+    kInput = 0;
+    kDiscreteInput = 1;
+    kResidual = 2;
+    kOutput = 3;
+    kDiscreteOutput = 4;
+}
+
+
+/*
+    Definition of variable metadata.
+*/
+message VariableMetaData {
+    // enum to identify the variable type
+    VariableType type = 1;
+    
+    // variable name
+    string name = 3;
+
+    // variable shape
+    repeated int64 shape = 4;
+
+    // variable units
+    string units = 5;
+}
+
+/*
+    Definition of partials metadata.
+*/
+message PartialsMetaData {
+    // variable name
+    string name = 1;
+
+    string subname = 2;
+}
 
 
 /*

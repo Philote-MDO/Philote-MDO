@@ -18,9 +18,7 @@ syntax = "proto3";
 package philote;
 
 import "google/protobuf/empty.proto";
-import "array.proto";
-import "metadata.proto";
-import "options.proto";
+import "data.proto";
 
 
 
