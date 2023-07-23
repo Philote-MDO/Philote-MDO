@@ -35,3 +35,26 @@ service Discipline {
     // Sets up the component partials
     rpc DefinePartials (google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
 }
+
+
+// Definition of the generic Explicit Component RPC
+service ExplicitDiscipline {
+    // Calls the component Compute function
+    rpc Functions (stream Array) returns (stream Array) {}
+
+    // Calls the component ComputePartials function
+    rpc Gradient (stream Array) returns (stream Array) {}
+}
+
+
+// Definition of the generic Explicit Discipline RPC
+service ImplicitDiscipline {
+    // Calls the discipline Compute function
+    rpc Residuals (stream Array) returns (stream Array) {}
+
+    // Calls the discipline RPC that solves the nonlinear equations
+    rpc Solve (stream Array) returns (stream Array) {}
+
+    // Calls the discipline ComputePartials function
+    rpc ResidualGradients (stream Array) returns (stream Array) {}
+}
