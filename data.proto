@@ -17,6 +17,20 @@ syntax = "proto3";
 
 package philote;
 
+/*
+    Meta Data describing the discipline properties
+*/
+message DisciplineProperties {
+    // flag indicating if the discipline is differentiable
+    // (true = differentiable)
+    // note, a discipline can be differentiable, but not provide gradients
+    // (hence the provides_gradients flag is still necessary)
+    bool differentiable = 1;
+
+    // flag that indicates if the discipline provides gradients (true = provided)
+    bool provides_gradients = 2;
+}
+
 
 /*
     Stream options message type
