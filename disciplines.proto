@@ -33,10 +33,10 @@ service Discipline {
     rpc SetStreamOptions (philote.StreamOptions) returns (google.protobuf.Empty) {}
 
     // Sets up the component
-    rpc DefineVariables (google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
+    rpc GetVariableDefinitions (google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
 
     // Sets up the component partials
-    rpc DefinePartials (google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
+    rpc GetPartialDefinitions (google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
 }
 
 
