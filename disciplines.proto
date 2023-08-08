@@ -27,37 +27,43 @@ import "data.proto";
 // bindings for implicit and explicit disciplines.
 service Discipline {
     // Gets the fundamental properties of the discipline
-    rpc GetInfo (google.protobuf.Empty) returns (philote.DisciplineProperties) {}
+    rpc GetInfo(google.protobuf.Empty) returns (philote.DisciplineProperties) {}
 
     // RPC to set remote streaming options
-    rpc SetStreamOptions (philote.StreamOptions) returns (google.protobuf.Empty) {}
+    rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
 
-    // Sets up the component
-    rpc GetVariableDefinitions (google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
+    // Sets the discipline options
+    rpc SetOptions(google.protobuf.Empty) returns (google.protobuf.Empty) {}
 
-    // Sets up the component partials
-    rpc GetPartialDefinitions (google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
+    // Sets up the discipline
+    rpc Setup(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+
+    // Gets the variable definitions for the discipline
+    rpc GetVariableDefinitions(google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
+
+    // Gets the discipline partials definitions
+    rpc GetPartialDefinitions(google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
 }
 
 
 // Definition of the generic Explicit Component RPC
 service ExplicitDiscipline {
     // Calls the component Compute function
-    rpc Functions (stream Array) returns (stream Array) {}
+    rpc Functions(stream Array) returns (stream Array) {}
 
     // Calls the component ComputePartials function
-    rpc Gradient (stream Array) returns (stream Array) {}
+    rpc Gradient(stream Array) returns (stream Array) {}
 }
 
 
 // Definition of the generic Explicit Discipline RPC
 service ImplicitDiscipline {
     // Calls the discipline Compute function
-    rpc Residuals (stream Array) returns (stream Array) {}
+    rpc Residuals(stream Array) returns (stream Array) {}
 
     // Calls the discipline RPC that solves the nonlinear equations
-    rpc Solve (stream Array) returns (stream Array) {}
+    rpc Solve(stream Array) returns (stream Array) {}
 
     // Calls the discipline ComputePartials function
-    rpc ResidualGradients (stream Array) returns (stream Array) {}
+    rpc ResidualGradients(stream Array) returns (stream Array) {}
 }
