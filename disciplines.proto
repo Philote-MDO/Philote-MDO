@@ -25,7 +25,7 @@ import "data.proto";
 // This service is never used on its own. It will always be used in a base class
 // or implementation. Base classes are necessary to avoid code duplication in
 // bindings for implicit and explicit disciplines.
-service Discipline {
+service DisciplineService {
     // Gets the fundamental properties of the discipline
     rpc GetInfo(google.protobuf.Empty) returns (philote.DisciplineProperties) {}
 
@@ -47,7 +47,7 @@ service Discipline {
 
 
 // Definition of the generic Explicit Component RPC
-service ExplicitDiscipline {
+service ExplicitService {
     // Calls the component Compute function
     rpc ComputeFunction(stream Array) returns (stream Array) {}
 
@@ -57,7 +57,7 @@ service ExplicitDiscipline {
 
 
 // Definition of the generic Explicit Discipline RPC
-service ImplicitDiscipline {
+service ImplicitService {
     // Calls the discipline Compute function
     rpc Residuals(stream Array) returns (stream Array) {}
 
