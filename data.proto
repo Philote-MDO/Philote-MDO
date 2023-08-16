@@ -104,8 +104,5 @@ message Array {
     VariableType type = 5;
 
     // continuous data
-    repeated double continuous = 6;
-
-    // discrete data
-    repeated double discrete = 7;
+    repeated double data = 6;
 }
