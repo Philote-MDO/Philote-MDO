@@ -16,6 +16,7 @@
 syntax = "proto3";
 
 package philote;
+option java_package = "org.philote.mdo";
 
 import "google/protobuf/empty.proto";
 import "data.proto";
