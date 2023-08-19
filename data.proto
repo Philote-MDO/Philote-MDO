@@ -82,6 +82,8 @@ message PartialsMetaData {
     string name = 1;
 
     string subname = 2;
+
+    repeated int64 shape = 3;
 }
 
 
