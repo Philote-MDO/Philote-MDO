@@ -1,0 +1,70 @@
+/*
+    Copyright 2022-2023 Christopher A. Lupp
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/
+syntax = "proto3";
+
+package philote;
+option java_package = "org.philote.mdo";
+
+import "google/protobuf/empty.proto";
+import "data.proto";
+
+
+// Generic Discipline Definition
+// This service is never used on its own. It will always be used in a base class
+// or implementation. Base classes are necessary to avoid code duplication in
+// bindings for implicit and explicit disciplines.
+service DisciplineService {
+    // Gets the fundamental properties of the discipline
+    rpc GetInfo(google.protobuf.Empty) returns (philote.DisciplineProperties) {}
+
+    // RPC to set remote streaming options
+    rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
+
+    // Sets the discipline options
+    rpc SetOptions(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+
+    // Sets up the discipline
+    rpc Setup(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+
+    // Gets the variable definitions for the discipline
+    rpc GetVariableDefinitions(google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
+
+    // Gets the discipline partials definitions
+    rpc GetPartialDefinitions(google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
+}
+
+
+// Definition of the generic Explicit Component RPC
+service ExplicitService {
+    // Calls the component Compute function
+    rpc ComputeFunction(stream Array) returns (stream Array) {}
+
+    // Calls the component ComputePartials function
+    rpc ComputeGradient(stream Array) returns (stream Array) {}
+}
+
+
+// Definition of the generic Explicit Discipline RPC
+service ImplicitService {
+    // Calls the discipline Compute function
+    rpc Residuals(stream Array) returns (stream Array) {}
+
+    // Calls the discipline RPC that solves the nonlinear equations
+    rpc Solve(stream Array) returns (stream Array) {}
+
+    // Calls the discipline ComputePartials function
+    rpc ResidualGradients(stream Array) returns (stream Array) {}
+}
