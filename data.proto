@@ -54,6 +54,7 @@ enum VariableType {
     kResidual = 2;
     kOutput = 3;
     kDiscreteOutput = 4;
+    kPartial = 5;
 }
 
 
