@@ -60,11 +60,11 @@ service ExplicitService {
 // Definition of the generic Explicit Discipline RPC
 service ImplicitService {
     // Calls the discipline Compute function
-    rpc Residuals(stream Array) returns (stream Array) {}
+    rpc ComputeResiduals(stream Array) returns (stream Array) {}
 
     // Calls the discipline RPC that solves the nonlinear equations
-    rpc Solve(stream Array) returns (stream Array) {}
+    rpc SolveResidual(stream Array) returns (stream Array) {}
 
     // Calls the discipline ComputePartials function
-    rpc ResidualGradients(stream Array) returns (stream Array) {}
+    rpc ComputeResidualGradients(stream Array) returns (stream Array) {}
 }
