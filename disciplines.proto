@@ -63,7 +63,7 @@ service ImplicitService {
     rpc ComputeResiduals(stream Array) returns (stream Array) {}
 
     // Calls the discipline RPC that solves the nonlinear equations
-    rpc SolveResidual(stream Array) returns (stream Array) {}
+    rpc SolveResiduals(stream Array) returns (stream Array) {}
 
     // Calls the discipline ComputePartials function
     rpc ComputeResidualGradients(stream Array) returns (stream Array) {}
