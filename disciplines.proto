@@ -34,7 +34,7 @@ service DisciplineService {
     rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
 
     // Sets the discipline options
-    rpc SetOptions(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+    rpc SetOptions(philote.DisciplineOptions) returns (google.protobuf.Empty) {}
 
     // Sets up the discipline
     rpc Setup(google.protobuf.Empty) returns (google.protobuf.Empty) {}
