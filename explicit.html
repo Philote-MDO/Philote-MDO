@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Explicit Components &#8212; Philote</title>
+    <title>Explicit Disciplines</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -64,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'explicit';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Implicit Components" href="implicit.html" />
-    <link rel="prev" title="Data Representation" href="data.html" />
+    <link rel="next" title="Implicit Disciplines" href="implicit.html" />
+    <link rel="prev" title="Basic Discipline" href="discipline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -76,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -158,14 +168,16 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="history.html">Historical Background</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technologies</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="data.html">Data Representation</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Explicit Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discipline.html">Basic Discipline</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Explicit Disciplines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Disciplines</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="languages.html">Supported Languages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="licensing.html">License and Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
 </ul>
 
     </div>
@@ -321,10 +333,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -332,7 +344,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -349,7 +361,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Explicit Components</h1>
+    <h1>Explicit Disciplines</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -359,9 +371,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute">Compute</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-partials">Compute Partials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computefunction">ComputeFunction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-gradient">Compute Gradient</a></li>
 </ul>
             </nav>
         </div>
@@ -373,42 +384,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="explicit-components">
-<h1>Explicit Components<a class="headerlink" href="#explicit-components" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="explicit-disciplines">
+<h1>Explicit Disciplines<a class="headerlink" href="#explicit-disciplines" title="Permalink to this heading">#</a></h1>
 <p>The previous section described how data is represented by Philote. Individual
 disciplines are described as a service. This section describes the conventions
-for the <code class="docutils literal notranslate"><span class="pre">ExplicitComponent</span></code>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>service ExplicitComponent {
-    // Sets up the component
-    rpc Setup (google.protobuf.Empty) returns (Stream VariableMetaData) {}
+for the <code class="docutils literal notranslate"><span class="pre">ExplicitDiscipline</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>service ExplicitService {
+    // Calls the discipline Compute function
+    rpc ComputeFunction(stream Array) returns (stream Array) {}
 
-    // Calls the component Compute function
-    rpc Compute (Stream Chunk) returns (Stream Chunk) {}
-
-    // Calls the component ComputePartials function
-    rpc ComputePartials (stream Chunk) returns (stream Chunk) {}
+    // Calls the discipline ComputePartials function
+    rpc ComputeGradient(stream Array) returns (stream Array) {}
 }
 </pre></div>
 </div>
-<section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
-<p>The setup remote procedure call (<code class="docutils literal notranslate"><span class="pre">RPC</span></code>) enables the MDO framework to query the
-analysis server for information about inputs and outputs. Frameworks, such as
-OpenMDAO, may use this to allocate the variable and define units. However, in
-general, this RPC is optional (for the MDO framework). It should still be
-implemented by the analysis server, to avoid compatibility issues when switching
-between MDO frameworks.</p>
-</section>
-<section id="compute">
-<h2>Compute<a class="headerlink" href="#compute" title="Permalink to this heading">#</a></h2>
+<section id="computefunction">
+<h2>ComputeFunction<a class="headerlink" href="#computefunction" title="Permalink to this heading">#</a></h2>
 <p>The most basic RPC required by an MDO framework is a function evaluation. The
 Compute RPC sends the input variables (<code class="docutils literal notranslate"><span class="pre">Variables</span></code>,chunked) to the analysis
 server. The server then conducts a function evaluation and assigns output data
 to a Variables datatype, chunks it, and streams the chunks back over the wire to
 the MDO framework.</p>
 </section>
-<section id="compute-partials">
-<h2>Compute Partials<a class="headerlink" href="#compute-partials" title="Permalink to this heading">#</a></h2>
+<section id="compute-gradient">
+<h2>Compute Gradient<a class="headerlink" href="#compute-gradient" title="Permalink to this heading">#</a></h2>
 <p>This RPC enables the MDO framework to query the discipline derivatives.
 Naturally, not all disciplines are differentiable or meant to be used in
 gradient-based optimization. As such, this function is optional.</p>
@@ -443,19 +442,18 @@ derivatives, the are returned (chunked) as a Partials datatypes.</p>
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="data.html"
+       href="discipline.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Data Representation</p>
+        <p class="prev-next-title">Basic Discipline</p>
       </div>
     </a>
     <a class="right-next"
@@ -463,14 +461,11 @@ derivatives, the are returned (chunked) as a Partials datatypes.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Implicit Components</p>
+        <p class="prev-next-title">Implicit Disciplines</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -485,9 +480,8 @@ derivatives, the are returned (chunked) as a Partials datatypes.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute">Compute</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-partials">Compute Partials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computefunction">ComputeFunction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-gradient">Compute Gradient</a></li>
 </ul>
   </nav></div>
 
@@ -524,6 +518,9 @@ By Christopher A. Lupp
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  Test
+</div>
   </div>
   
 </div>
@@ -535,8 +532,8 @@ By Christopher A. Lupp
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

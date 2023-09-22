@@ -3,31 +3,22 @@
 # Introduction
 
 Philote is a datastructure and communication standard for distributed
-multidisciplinary design optimization (MDO) frameworks. It was developed
-specifically for the Ansible MDO framework using protocol buffers and gRPC
-to autogenerate code in a variety of languages. However, as it is merely a
+multidisciplinary design optimization (MDO) frameworks. As it is merely a
 datastructure and communication standard, it can be applied to a variety of MDO
 frameworks. An example of this are the Computational System Domain Language
 ([CSDL](https://lsdolab.github.io/csdl/)) and [OpenMDAO](https://openmdao.org)
-bindings, which enable those frameworks to call remote analysis disciplines.
+interfaces implemented in the Philote-Python bindings (see Supported Languages),
+which enable those frameworks to call remote analysis disciplines.
 
 
 ## Motivation
 
-As previously mentioned, Philote is a foundational piece of software written for
-the Ansible MDO framework. Without going into more detail about this framework,
-a central aspect it addresses is decentralized computing. This requires a set of
-definitions for creating and communicating with decentralized disciplines.
-Moreover, Philote is intended to be a standard that supports many MDO
-frameworks. Ubiquitous support of frameworks enables discipline developers to
-develop *one* MDO interface that can be used with many MDO frameworks, thereby
-decoupling the framework and discipline development cycles.
-
-Given that the aforementioned CSDL and OpenMDAO frameworks exist (along with
-several commercial offerings), it would be reasonable to ask why the world needs
-another MDO framework. Well, mainly because the existing frameworks do not cover
-decentralized computing (or commercial ones that do, do not offer robust
-gradient-based capablilities).
+A central aspect Philote addresses is decentralized computing. This requires a
+set of definitions for creating and communicating with decentralized
+disciplines. Moreover, Philote is intended to be a standard that supports many
+MDO frameworks. Ubiquitous support of frameworks enables discipline developers
+to develop *one* MDO interface that can be used with many MDO frameworks,
+thereby decoupling the framework and discipline development cycles.
 
 Being decentralized requires a means of communication between the main
 framework and the individual analysis disciplines. Moreover, the individual
@@ -41,12 +32,12 @@ buffer ([protobuf](https://developers.google.com/protocol-buffers/))
 definitions.
 
 The definition of a data and communications standard allows Philote to be used
-beyond the Ansible MDO tool. The absence of implementation beyond the
-auto-generated code allows for flexibility of use. However, the goal is to
+beyond any one MDO tool. The absence of implementation beyond the auto-generated
+code allows for flexibility of use and development. However, the goal is to
 provide enough of an auto-generated template for analysis tool developers to
 easily implement MDO disciplines and couple them into a large variety of
-frameworks using the same communication mechanism. A number of examples are in
-the works to ease the development process of analysis discipline servers.
+frameworks using the same communication mechanism. A number of examples can be
+found under the Supported Languages page.
 
 
 ## Origin of the Project Name

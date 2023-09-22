@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>License and Philosophy &#8212; Philote</title>
+    <title>License and Philosophy</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -64,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'licensing';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Release Notes" href="release_notes.html" />
     <link rel="prev" title="Supported Languages" href="languages.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -75,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -157,14 +168,16 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="history.html">Historical Background</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="technologies.html">Technologies</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="technologies.html">Technology</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="data.html">Data Representation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discipline.html">Basic Discipline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Disciplines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Disciplines</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="languages.html">Supported Languages</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">License and Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
 </ul>
 
     </div>
@@ -320,10 +333,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -331,7 +344,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -393,15 +406,21 @@ limitations under the License.
 chosen and what ramifications it has.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>I am not an intellectual property lawyer (or any type of lawyer, for that matter). I have tried to put down my interpretations of how Philote’s licensing influences decision making in the context of a larger MDO problem. These should be viewed as commentary and my interpretation; under no circumstances should the following sections be viewed as legal advice. The only thing I can say with legal certainty is that Philote is licensed under the Apache 2 license.</p>
+<p>I am not an intellectual property lawyer (or any type of lawyer, for that
+matter). I have tried to put down my interpretations of how Philote’s licensing
+influences decision making in the context of a larger MDO problem. These should
+be viewed as commentary and my interpretation; under no circumstances should the
+following sections be viewed as legal advice. The only thing I can say with
+legal certainty is that Philote is licensed under the Apache 2 license. If you
+have have questions or concerns regarind intellectual property, please talk to a
+qualified legal professional.</p>
 </div>
 <section id="philosophy">
 <h2>Philosophy<a class="headerlink" href="#philosophy" title="Permalink to this heading">#</a></h2>
 <p>Licensing is an important topic in software, especially for tools that are meant
 to be used within larger frameworks. Because licensing can be a reason for or
 against using a piece of software, this section provides a brief overview of the
-license governing the use of Philote and why this particular license was chosen.
-In addition, there is a separate chapter on licensing.</p>
+license governing the use of Philote and why this particular license was chosen.</p>
 <p>Philote is licensed under the Apache version 2 open-source license. This enables
 Philote to be used freely, <code class="docutils literal notranslate"><span class="pre">without</span> <span class="pre">concerns</span> <span class="pre">about</span> <span class="pre">copyleft</span> <span class="pre">(viral)</span> <span class="pre">licensing</span></code>. While copyleft licenses serve a purpose, in this case, they could
 stand in the way of adoption of Philote. For example, a proprietary vendor would
@@ -419,22 +438,25 @@ work, i.e., Philote source). Furthermore, the Apache 2 license is also
 compatible with the GNU Public License version 3 (GPL 3), probably the most
 widely used copyleft license, so GPL3 analyses can still be accessed using
 Philote.</p>
-<p>In fact, the case of GPL 3 analyses is an interesting case that merits
+<p>In fact, GPL 3 licensed disciplines are an interesting case that merit
 discussion. In a monolithic MDO framework, such as OpenMDAO, using a GPL3 code
 in the context of an optimization problem will require all other licensed
-software to be GPL compatible. Furthermore, the entire setup script (OpenMDAO is
-written in Python) must be licensed under the GPL3 (hence the term viral
-licensing). This might not always be a problem, but could pose challenges if the
-optimization problem must be shared across organizational boundaries (i.e.,
-sharing with another company), as <code class="docutils literal notranslate"><span class="pre">no</span> <span class="pre">proprietary</span> <span class="pre">license</span> <span class="pre">could</span> <span class="pre">be</span> <span class="pre">applied</span></code> at
-that point.</p>
+software to be GPL compatible (in the event that the problem is distributed to
+another party). Furthermore, the entire setup script (OpenMDAO is written in
+Python) must be licensed under the GPL3 (hence the term viral licensing). This
+might not always be a problem, but could pose challenges if the optimization
+problem must be shared across organizational boundaries (i.e., sharing with
+another company), as <code class="docutils literal notranslate"><span class="pre">no</span> <span class="pre">proprietary</span> <span class="pre">license</span> <span class="pre">could</span> <span class="pre">be</span> <span class="pre">applied</span></code> at that point.</p>
 <p>Using <code class="docutils literal notranslate"><span class="pre">Philote</span> <span class="pre">actually</span> <span class="pre">alleviates</span></code> this last case. Because the source code of
 the GPL 3 software never is combined with others (other than Philote) to create
-a <code class="docutils literal notranslate"><span class="pre">derivative</span> <span class="pre">work</span></code>. As such, the remaining software used in the optimization
+a <code class="docutils literal notranslate"><span class="pre">derivative</span> <span class="pre">work</span></code>. This is true, as the GPL 3 does not affect network
+communications. As such, the remaining software used in the optimization
 does not need to be GPL compatible and the optimization problem itself does not
 automatically need to be licensed under the GPL 3. As you can see, this
 decentralized approach to MDO has more than just positive technical
-ramifications.</p>
+ramifications. While this is true for GPL 3, please keep in mind that other
+licenses (such as the AGPL), have other stipulations for which the above is not
+true.</p>
 </section>
 </section>
 
@@ -463,11 +485,10 @@ ramifications.</p>
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="languages.html"
@@ -478,10 +499,16 @@ ramifications.</p>
         <p class="prev-next-title">Supported Languages</p>
       </div>
     </a>
-</div></div>
-  
+    <a class="right-next"
+       href="release_notes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Release Notes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
-
                 </footer>
               
             </div>
@@ -534,6 +561,9 @@ By Christopher A. Lupp
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  Test
+</div>
   </div>
   
 </div>
@@ -545,8 +575,8 @@ By Christopher A. Lupp
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

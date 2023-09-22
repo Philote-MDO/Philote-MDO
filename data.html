@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Representation &#8212; Philote</title>
+    <title>Data Representation</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -64,8 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'data';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Explicit Components" href="explicit.html" />
-    <link rel="prev" title="Technologies" href="technologies.html" />
+    <link rel="next" title="Basic Discipline" href="discipline.html" />
+    <link rel="prev" title="Technology" href="technologies.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -76,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -158,14 +168,16 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="history.html">Historical Background</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technologies</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Data Representation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discipline.html">Basic Discipline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Disciplines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Disciplines</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="languages.html">Supported Languages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="licensing.html">License and Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
 </ul>
 
     </div>
@@ -321,10 +333,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -332,7 +344,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -360,10 +372,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#array-types">Array Types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-data">Variable Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-meta-data">Variable Meta Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivative-partials-data">Derivative (Partials) Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chunk-datatype">Chunk Datatype</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-data">Meta Data</a></li>
 </ul>
             </nav>
         </div>
@@ -383,12 +392,24 @@ document.write(`
 <p>Philote provides two different types of arrays: one for continuous and the other
 for discrete data. Any variable that gradients are required for must be defined
 as continous data. The datatype for continuous data is the <code class="docutils literal notranslate"><span class="pre">DoubleArray</span></code>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message DoubleArray {
-    // array shape
-    repeated int64 index = 1;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message Array {
+    // array name (optional)
+    string name = 1;
+
+    // array sub-name (optional)
+    string subname = 2;
+
+    // starting index
+    int64 start = 3;
+
+    // ending index
+    int64 end = 4;
+
+    // flag for if this is an input or output
+    VariableType type = 5;
 
     // continuous data
-    repeated double data = 2;
+    repeated double data = 6;
 }
 </pre></div>
 </div>
@@ -399,65 +420,25 @@ double precision values.</p>
 <p class="admonition-title">Note</p>
 <p>By convention, Philote arrays are described in <code class="docutils literal notranslate"><span class="pre">row</span> <span class="pre">major</span></code> order.</p>
 </div>
-<p>Similarly, discrete data is defined as array of integers (<code class="docutils literal notranslate"><span class="pre">IntArray</span></code>). While
-discrete data in an MDO problem can generally take any form or datatype, this
-generality would add unnecessary complexity to Philote’s design. Integer’s
-account for the vast majority of cases of discrete variables. As such, Philote
-limits its representation of discrete data to integer arrays:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message IntArray {
-    // array shape
-    repeated int64 shape = 1;
-
-    // continuous data
-    repeated int64 data = 2;
-}
-</pre></div>
-</div>
-<p>Again, analogous to the double array, the implementation is that of an
-n-dimensional array described by a shape array and an integer (64-bit) array
-containing the serialized variable data (row major).</p>
 </section>
-<section id="variable-data">
-<h2>Variable Data<a class="headerlink" href="#variable-data" title="Permalink to this heading">#</a></h2>
-<p>While the array representations are necessary to describe data, arrays are not
-sent over the wire directly. Instead a variable datatype is defined which
-component function calls can pass to and from the analysis servers. The
-<code class="docutils literal notranslate"><span class="pre">Variables</span></code> datatype combines the array datatypes with a string key value to
-enable decoding the variable by name:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message Variables {
-    // continuous data
-    map &lt;string, DoubleArray&gt; continuous = 1;
-
-    // discrete data
-    map &lt;string, IntArray&gt; discrete = 2;
-}
-</pre></div>
-</div>
-<p>While the <code class="docutils literal notranslate"><span class="pre">Variables</span></code> datatype contains both continuous and discrete data, it
-should be noted that both fields should be treated as optional. This enables
-sending either data types independently or together. There are cases, however,
-where discrete data may not be included for an analysis. Variables datatypes are
-both used for function inputs as well as function return values (discrete
-outputs may also be provided).</p>
-</section>
-<section id="variable-meta-data">
-<h2>Variable Meta Data<a class="headerlink" href="#variable-meta-data" title="Permalink to this heading">#</a></h2>
+<section id="meta-data">
+<h2>Meta Data<a class="headerlink" href="#meta-data" title="Permalink to this heading">#</a></h2>
 <p>In addition to variable analysis data, meta data is needed for many MDO
 frameworks to define variable dimensions/shape as well as identify variable
 units. Philote defines a datatype to describe required meta data,
 <code class="docutils literal notranslate"><span class="pre">VariableMetaData</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message VariableMetaData {
-    // flag to identify the variable as an input
-    bool input = 1;
-
+    // enum to identify the variable type
+    VariableType type = 1;
+    
     // variable name
-    string name = 2;
+    string name = 3;
 
     // variable shape
-    repeated int64 id = 3;
+    repeated int64 shape = 4;
 
     // variable units
-    string units = 4;
+    string units = 5;
 }
 </pre></div>
 </div>
@@ -467,45 +448,17 @@ variable). This datatype is sent to the framework during the setup phase and
 enables the MDO framework to define and allocate the inputs and outputs. Note
 the bool flag that denotes if the variable is an input or output (true denotes
 an input).</p>
-</section>
-<section id="derivative-partials-data">
-<h2>Derivative (Partials) Data<a class="headerlink" href="#derivative-partials-data" title="Permalink to this heading">#</a></h2>
-<p>Derivative information is not passed using the Variables datatype. Instead a
-separate datatype, <code class="docutils literal notranslate"><span class="pre">Partials</span></code>, is defined to pass derivative data over the
-wire:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message Partials {
-    // map of all partials arrays
-    map &lt;Pair, DoubleArray&gt; data = 1;
-}
-</pre></div>
-</div>
-<p>One reason for the different datatype is that a derivative is defined by two
-identifiers: the function as well as the variable it is differentiated by. To
-identify these, a helper datatype, <code class="docutils literal notranslate"><span class="pre">Pair</span></code>, is used:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message Pair {
-    // name of the function
-    string f = 1;
+<p>Finally, meta data for partials is represented in the following message type:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message PartialsMetaData {
+    // variable name
+    string name = 1;
 
-    // name of the variable
-    string x = 2;
+    string subname = 2;
+
+    repeated int64 shape = 3;
 }
 </pre></div>
 </div>
-<p>Otherwise, the Partials type is similar to the Variables type, except that no
-discrete array is provided (as no gradients can be obtained from discrete data).</p>
-</section>
-<section id="chunk-datatype">
-<h2>Chunk Datatype<a class="headerlink" href="#chunk-datatype" title="Permalink to this heading">#</a></h2>
-<p>Finally, a <code class="docutils literal notranslate"><span class="pre">Chunk</span></code> datatype is defined to allow sending large datasets:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>message Chunk {
-    bytes data = 1;
-}
-</pre></div>
-</div>
-<p>gRPC limits message sizes to 4MB. Due to this limitation, and because MDO data
-sizes can be considerably larger, there is a need to chunk the data that is sent
-for every remote procedure call, stream it over the wire, and reassemble it at
-the other end.</p>
 </section>
 </section>
 
@@ -534,11 +487,10 @@ the other end.</p>
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="technologies.html"
@@ -546,22 +498,19 @@ the other end.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Technologies</p>
+        <p class="prev-next-title">Technology</p>
       </div>
     </a>
     <a class="right-next"
-       href="explicit.html"
+       href="discipline.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Explicit Components</p>
+        <p class="prev-next-title">Basic Discipline</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -577,10 +526,7 @@ the other end.</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#array-types">Array Types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-data">Variable Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-meta-data">Variable Meta Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#derivative-partials-data">Derivative (Partials) Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chunk-datatype">Chunk Datatype</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-data">Meta Data</a></li>
 </ul>
   </nav></div>
 
@@ -617,6 +563,9 @@ By Christopher A. Lupp
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  Test
+</div>
   </div>
   
 </div>
@@ -628,8 +577,8 @@ By Christopher A. Lupp
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

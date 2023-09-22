@@ -7,8 +7,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Basic Discipline</title>
   
   
   
@@ -61,9 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'discipline';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Explicit Disciplines" href="explicit.html" />
+    <link rel="prev" title="Data Representation" href="data.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,11 +166,11 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="history.html">Historical Background</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="technologies.html">Technology</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="data.html">Data Representation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="discipline.html">Basic Discipline</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Basic Discipline</a></li>
 <li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Disciplines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="implicit.html">Implicit Disciplines</a></li>
 </ul>
@@ -246,7 +249,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chrislupp/Philote-MDO/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chrislupp/Philote-MDO/issues/new?title=Issue%20on%20page%20%2Fdiscipline.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -258,6 +261,54 @@ const thebe_selector_output = ".output, .cell_output"
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/discipline.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -297,7 +348,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -308,11 +361,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Basic Discipline</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getinfo">GetInfo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setstreamoptions">SetStreamOptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setoptions">SetOptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getvariabledefinitions">GetVariableDefinitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getpartialdefinitions">GetPartialDefinitions</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -322,13 +388,98 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="basic-discipline">
+<h1>Basic Discipline<a class="headerlink" href="#basic-discipline" title="Permalink to this heading">#</a></h1>
+<p>The basic discipline service (DisciplineService) serves as the foundation for
+all types of disciplines within Philote:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>service DisciplineService {
+    // Gets the fundamental properties of the discipline
+    rpc GetInfo(google.protobuf.Empty) returns (philote.DisciplineProperties) {}
 
-<h1 id="index">Index</h1>
+    // RPC to set remote streaming options
+    rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
 
-<div class="genindex-jumpbox">
- 
+    // Sets the discipline options
+    rpc SetOptions(philote.DisciplineOptions) returns (google.protobuf.Empty) {}
+
+    // Sets up the discipline
+    rpc Setup(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+
+    // Gets the variable definitions for the discipline
+    rpc GetVariableDefinitions(google.protobuf.Empty) returns (stream philote.VariableMetaData) {}
+
+    // Gets the discipline partials definitions
+    rpc GetPartialDefinitions(google.protobuf.Empty) returns (stream philote.PartialsMetaData) {}
+}
+</pre></div>
 </div>
+<p>In a typical object-oriented framework the DisciplineService would serve as a
+base class from which all disciplines would be inherited. However, gRPC and
+protobuf do not support inheritance, so a similar effect is achieved by
+<a class="reference external" href="https://en.wikipedia.org/wiki/Composition_over_inheritance">composition</a>. This
+must be considered when developing interfaces and language specific bindings
+that implement the Philote standard, but do not need to be exposed to users.</p>
+<section id="getinfo">
+<h2>GetInfo<a class="headerlink" href="#getinfo" title="Permalink to this heading">#</a></h2>
+<p>The GetInfo function enables the client to retrieve the discipline properties in
+the form of a DisciplineProperties message. This message contains information
+about if the discipline is continuous, differentiable, and if it provides
+derivatives.</p>
+</section>
+<section id="setstreamoptions">
+<h2>SetStreamOptions<a class="headerlink" href="#setstreamoptions" title="Permalink to this heading">#</a></h2>
+<p>The SetStreamOptions function transmits the streaming options from the client to
+the server. This currently only consists of the chunk size for continuous
+arrays. However, future iterations may need to expand the number of stream
+options used by the standard.</p>
+</section>
+<section id="setoptions">
+<h2>SetOptions<a class="headerlink" href="#setoptions" title="Permalink to this heading">#</a></h2>
+<p>The SetOptions function is used by the client to set any discipline options
+required by the server. This typically needs to be done before running a
+function evaluation, but likely after calling Setup (though this likely depends
+on the discipline).</p>
+</section>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<p>The setup remote procedure call (<code class="docutils literal notranslate"><span class="pre">RPC</span></code>) enables the MDO framework to query the
+analysis server for information about inputs and outputs. Frameworks, such as
+OpenMDAO, may use this to allocate the variable and define units. However, in
+general, this RPC is optional (for the MDO framework). It should still be
+implemented by the analysis server, to avoid compatibility issues when switching
+between MDO frameworks.</p>
+</section>
+<section id="getvariabledefinitions">
+<h2>GetVariableDefinitions<a class="headerlink" href="#getvariabledefinitions" title="Permalink to this heading">#</a></h2>
+<p>The GetVariableDefinitions function retrieves variable (inputs and outputs)
+metadata from the server for the client. This is needed for preallocation, etc.</p>
+</section>
+<section id="getpartialdefinitions">
+<h2>GetPartialDefinitions<a class="headerlink" href="#getpartialdefinitions" title="Permalink to this heading">#</a></h2>
+<p>The GetPartialDefinitions function retrieves partials metadata from the server
+for the client. This is needed for preallocation, etc.</p>
+</section>
+</section>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -340,12 +491,49 @@ document.write(`
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Data Representation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="explicit.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Explicit Disciplines</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getinfo">GetInfo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setstreamoptions">SetStreamOptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setoptions">SetOptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getvariabledefinitions">GetVariableDefinitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getpartialdefinitions">GetPartialDefinitions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

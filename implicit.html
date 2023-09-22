@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Implicit Components &#8212; Philote</title>
+    <title>Implicit Disciplines</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -65,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Supported Languages" href="languages.html" />
-    <link rel="prev" title="Explicit Components" href="explicit.html" />
+    <link rel="prev" title="Explicit Disciplines" href="explicit.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -76,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -158,14 +168,16 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="history.html">Historical Background</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technologies</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="technologies.html">Technology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="data.html">Data Representation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Components</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Implicit Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discipline.html">Basic Discipline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="explicit.html">Explicit Disciplines</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Implicit Disciplines</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="languages.html">Supported Languages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="licensing.html">License and Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
 </ul>
 
     </div>
@@ -321,10 +333,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -332,11 +344,13 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -347,11 +361,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Implicit Components</h1>
+    <h1>Implicit Disciplines</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computeresiduals">ComputeResiduals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solveresiduals">SolveResiduals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computeresidualgradients">ComputeResidualGradients</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -361,8 +385,36 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="implicit-components">
-<h1>Implicit Components<a class="headerlink" href="#implicit-components" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="implicit-disciplines">
+<h1>Implicit Disciplines<a class="headerlink" href="#implicit-disciplines" title="Permalink to this heading">#</a></h1>
+<p>Implicit disciplines are based on the discipline service, like the explicit
+disciplines. They also use composition and are defined as:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>service ImplicitService {
+    // Calls the discipline Compute function
+    rpc ComputeResiduals(stream Array) returns (stream Array) {}
+
+    // Calls the discipline RPC that solves the nonlinear equations
+    rpc SolveResiduals(stream Array) returns (stream Array) {}
+
+    // Calls the discipline ComputePartials function
+    rpc ComputeResidualGradients(stream Array) returns (stream Array) {}
+}
+</pre></div>
+</div>
+<section id="computeresiduals">
+<h2>ComputeResiduals<a class="headerlink" href="#computeresiduals" title="Permalink to this heading">#</a></h2>
+<p>The ComputeResiduals function evaluates the residual given a set of inputs.</p>
+</section>
+<section id="solveresiduals">
+<h2>SolveResiduals<a class="headerlink" href="#solveresiduals" title="Permalink to this heading">#</a></h2>
+<p>The SolveResiduals function solves the residual (drives it to zero) and returns
+the discipline outputs for that state.</p>
+</section>
+<section id="computeresidualgradients">
+<h2>ComputeResidualGradients<a class="headerlink" href="#computeresidualgradients" title="Permalink to this heading">#</a></h2>
+<p>The ComputeResidualGradients function computes the derivatives of the
+ComputeResiduals function.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -390,11 +442,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="explicit.html"
@@ -402,7 +453,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Explicit Components</p>
+        <p class="prev-next-title">Explicit Disciplines</p>
       </div>
     </a>
     <a class="right-next"
@@ -414,15 +465,28 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computeresiduals">ComputeResiduals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solveresiduals">SolveResiduals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computeresidualgradients">ComputeResidualGradients</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
@@ -455,6 +519,9 @@ By Christopher A. Lupp
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  Test
+</div>
   </div>
   
 </div>
@@ -466,8 +533,8 @@ By Christopher A. Lupp
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
