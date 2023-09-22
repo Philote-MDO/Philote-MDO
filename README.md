@@ -1,5 +1,8 @@
 # ProjectPhilote
-Protocol buffer definitions for the MDO system.
+Protocol buffer definitions for the MDO system. The documentation for this
+project can be found at:
+
+https://chrislupp.github.io/Philote-MDO/intro.html
 
 
 ## License

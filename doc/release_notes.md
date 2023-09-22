@@ -1,5 +1,17 @@
 # Release Notes
 
+## Versions 0.5.2
+
+Readme changes only to make documentation discoverable.
+
+### Features
+
+- None
+
+### Bug Fixes
+
+- Added link to documentation to project readme
+
 ## Versions 0.5.1
 
 This version only fixes missing public release information in preparation for
