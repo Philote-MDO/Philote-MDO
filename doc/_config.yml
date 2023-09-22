@@ -32,5 +32,8 @@ html:
   use_issues_button: true
   use_repository_button: true
   extra_navbar: ''
-  extra_footer: "Test"
+  extra_footer: "This work has been cleared for public release, distribution unlimited, case 
+    number: AFRL-2023-1321. The views expressed are those of the author and do
+    not necessarily reflect the official policy or position of the Department of
+    the Air Force, the Department of Defense, or the U.S. government."
   # announcement: "Now with 20% more flavor!"
