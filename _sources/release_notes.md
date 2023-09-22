@@ -11,6 +11,8 @@ Readme changes only to make documentation discoverable.
 ### Bug Fixes
 
 - Added link to documentation to project readme
+- Renamed project title in readme (was old placeholder)
+
 
 ## Versions 0.5.1
 
