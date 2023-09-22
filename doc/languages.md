@@ -38,15 +38,6 @@ called via a foreign function interface. Another option is to wrap the Fortran
 code into Python using f2py and use Python's gRPC bindings.
 
 
-## Matlab
-
-Matlab also does not provide gRPC bindings. However, much like Fortran, binding
-can be used in another language while exposing this interface to Matlab.
-In this manner, it should therefore be possible either call analysis servers
-from Matlab (e.g., for use with fmincon) or to create analysis disciplines in
-Matlab to be called from external frameworks.
-
-
 ## Client/Server Boilerplate Code
 
 While any language with gRPC bindings can, in principle, be used to create
@@ -56,14 +47,12 @@ developer to create the code to prepare and consume data. Naturally, this may be
 a daunting task with a high threshold of entry. This is compounded by the fact
 that many MDO analysis devlopers are not necessarily well versed with networking
 or data serialization. As such, a number of libraries and examples containing
-boilerplate code are being developed to reduce the development effort required
+boilerplate code have been developed to reduce the development effort required
 to get analysis servers running:
 
-- [C++](https://github.com/chrislupp/Philote-Cpp) (work in progress)
-- [Python](https://github.com/chrislupp/Philote-Python) (work in progress)
+- [C++](https://github.com/chrislupp/Philote-Cpp)
+- [Python](https://github.com/chrislupp/Philote-Python)
+- [Kotlin/Java](https://github.com/chrislupp/Philote-Python)
+- [Matlab](https://github.com/chrislupp/Philote-Matlab) (work in progress,
+  currently client only)
 - [Rust](https://github.com/chrislupp/Philote-Rust) (work in progress)
-- [Matlab](https://github.com/chrislupp/Philote-Matlab) (work in progress)
-
-In addition to providing examples for analysis disciplines, these libraries also
-include tools within their given language for calling function and gradient
-calls of external analysis servers.

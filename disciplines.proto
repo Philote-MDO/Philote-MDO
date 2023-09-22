@@ -49,10 +49,10 @@ service DisciplineService {
 
 // Definition of the generic Explicit Component RPC
 service ExplicitService {
-    // Calls the component Compute function
+    // Calls the discipline Compute function
     rpc ComputeFunction(stream Array) returns (stream Array) {}
 
-    // Calls the component ComputePartials function
+    // Calls the discipline ComputePartials function
     rpc ComputeGradient(stream Array) returns (stream Array) {}
 }
 
