@@ -13,3 +13,5 @@ chapters:
   - file: implicit
 - file: languages
 - file: licensing
+- file: release_notes
+
