@@ -8,6 +8,7 @@ chapters:
 - file: technologies
   sections:
   - file: data
+  - file: discipline
   - file: explicit
   - file: implicit
 - file: languages
