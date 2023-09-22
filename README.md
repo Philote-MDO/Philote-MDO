@@ -1,4 +1,4 @@
-# ProjectPhilote
+# Philote MDO
 Protocol buffer definitions for the MDO system. The documentation for this
 project can be found at:
 
