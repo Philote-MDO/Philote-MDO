@@ -15,6 +15,8 @@
 */
 syntax = "proto3";
 
+import "google/protobuf/struct.proto";
+
 package philote;
 option java_package = "org.philote.mdo";
 
@@ -42,9 +44,13 @@ message DisciplineProperties {
 message StreamOptions {
     // maximum number of doubles per array slice
     int64 num_double = 1;
+}
 
-    // maximum number of integers per array slice
-    int64 num_int = 2;
+/*
+    Message that transfers options from the client to the server.
+*/
+message DisciplineOptions {
+    google.protobuf.Struct options = 1;
 }
 
 

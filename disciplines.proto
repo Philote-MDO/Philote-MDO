@@ -34,7 +34,7 @@ service DisciplineService {
     rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
 
     // Sets the discipline options
-    rpc SetOptions(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+    rpc SetOptions(philote.DisciplineOptions) returns (google.protobuf.Empty) {}
 
     // Sets up the discipline
     rpc Setup(google.protobuf.Empty) returns (google.protobuf.Empty) {}
@@ -49,10 +49,10 @@ service DisciplineService {
 
 // Definition of the generic Explicit Component RPC
 service ExplicitService {
-    // Calls the component Compute function
+    // Calls the discipline Compute function
     rpc ComputeFunction(stream Array) returns (stream Array) {}
 
-    // Calls the component ComputePartials function
+    // Calls the discipline ComputePartials function
     rpc ComputeGradient(stream Array) returns (stream Array) {}
 }
 
@@ -63,7 +63,7 @@ service ImplicitService {
     rpc ComputeResiduals(stream Array) returns (stream Array) {}
 
     // Calls the discipline RPC that solves the nonlinear equations
-    rpc SolveResidual(stream Array) returns (stream Array) {}
+    rpc SolveResiduals(stream Array) returns (stream Array) {}
 
     // Calls the discipline ComputePartials function
     rpc ComputeResidualGradients(stream Array) returns (stream Array) {}

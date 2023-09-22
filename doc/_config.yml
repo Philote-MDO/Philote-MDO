@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Philote
+title: ''
 author: Christopher A. Lupp
 copyright: "2022–2023"
 logo: graphics/logos/philote.svg
@@ -31,6 +31,6 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  extra_navbar: An MDO Project
-  # extra_footer: "Test"
+  extra_navbar: ''
+  extra_footer: "Test"
   # announcement: "Now with 20% more flavor!"
