@@ -1,5 +1,32 @@
 # Release Notes
 
+## Versions 0.5.2
+
+Readme changes only to make documentation discoverable.
+
+### Features
+
+- None
+
+### Bug Fixes
+
+- Added link to documentation to project readme
+- Renamed project title in readme (was old placeholder)
+
+
+## Versions 0.5.1
+
+This version only fixes missing public release information in preparation for
+making the project public.
+
+### Features
+
+- None
+
+### Bug Fixes
+
+- Added public release information
+
 ## Versions 0.5.0
 This version revises the implicit discipline API, cleans up unused data fields
 and expands/revises the documentation.

@@ -1,5 +1,8 @@
-# ProjectPhilote
-Protocol buffer definitions for the MDO system.
+# Philote MDO
+Protocol buffer definitions for the MDO system. The documentation for this
+project can be found at:
+
+https://chrislupp.github.io/Philote-MDO/intro.html
 
 
 ## License
@@ -16,3 +19,9 @@ Protocol buffer definitions for the MDO system.
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+
+This work has been cleared for public release, distribution unlimited, case 
+number: AFRL-2023-1321. The views expressed are those of the author and do
+not necessarily reflect the official policy or position of the Department of
+the Air Force, the Department of Defense, or the U.S. government.
