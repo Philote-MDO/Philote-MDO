@@ -41,6 +41,12 @@ message DisciplineProperties {
 
     // flag that indicates if the discipline provides gradients (true = provided)
     bool provides_gradients = 3;
+
+    // discipline name
+    string name = 4;
+
+    // discipline version
+    string version = 5;
 }
 
 
