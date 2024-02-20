@@ -59,6 +59,24 @@ message StreamOptions {
 }
 
 /*
+    Enum that defines a data type in a message
+*/
+enum DataType {
+    kBool = 0;
+    kInt = 1;
+    kDouble = 2;
+}
+
+/*
+    Message that contains a list of all options presented by the discipline.
+*/
+message OptionsList {
+    repeated string options = 1;
+
+    repeated DataType type = 2;
+}
+
+/*
     Message that transfers options from the client to the server.
 */
 message DisciplineOptions {
