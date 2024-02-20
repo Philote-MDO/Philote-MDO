@@ -38,6 +38,9 @@ service DisciplineService {
     // RPC to set remote streaming options
     rpc SetStreamOptions(philote.StreamOptions) returns (google.protobuf.Empty) {}
 
+    // RPC that allows a client to query available discipline options
+    rpc GetAvailableOptions(google.protobuf.Empty) returns (philote.StreamOptions) {}
+
     // Sets the discipline options
     rpc SetOptions(philote.DisciplineOptions) returns (google.protobuf.Empty) {}
 
