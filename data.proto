@@ -65,6 +65,7 @@ enum DataType {
     kBool = 0;
     kInt = 1;
     kDouble = 2;
+    kString = 3;
 }
 
 /*
