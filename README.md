@@ -1,8 +1,12 @@
+<div align="center">
+<img src="https://github.com/philote-mdo/Philote-MDO/blob/main/doc/graphics/logos/philote.svg?raw=true" width="500">
+</div>
+
 # Philote MDO
 Protocol buffer definitions for the MDO system. The documentation for this
 project can be found at:
 
-https://chrislupp.github.io/Philote-MDO/intro.html
+https://philote-mdo.github.io/Philote-MDO/
 
 
 ## License
