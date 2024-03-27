@@ -1,5 +1,5 @@
 /*
-    Copyright 2022 Christopher A. Lupp
+    Copyright 2022-2024 Christopher A. Lupp
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -41,6 +41,12 @@ message DisciplineProperties {
 
     // flag that indicates if the discipline provides gradients (true = provided)
     bool provides_gradients = 3;
+
+    // discipline name
+    string name = 4;
+
+    // discipline version
+    string version = 5;
 }
 
 
@@ -50,6 +56,25 @@ message DisciplineProperties {
 message StreamOptions {
     // maximum number of doubles per array slice
     int64 num_double = 1;
+}
+
+/*
+    Enum that defines a data type in a message
+*/
+enum DataType {
+    kBool = 0;
+    kInt = 1;
+    kDouble = 2;
+    kString = 3;
+}
+
+/*
+    Message that contains a list of all options presented by the discipline.
+*/
+message OptionsList {
+    repeated string options = 1;
+
+    repeated DataType type = 2;
 }
 
 /*
