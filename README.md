@@ -1,12 +1,16 @@
+<div align="center">
+<img src="https://github.com/philote-mdo/Philote-MDO/blob/main/doc/graphics/logos/philote.svg?raw=true" width="500">
+</div>
+
 # Philote MDO
 Protocol buffer definitions for the MDO system. The documentation for this
 project can be found at:
 
-https://chrislupp.github.io/Philote-MDO/intro.html
+https://philote-mdo.github.io/Philote-MDO/
 
 
 ## License
-   Copyright 2022 Christopher A. Lupp
+   Copyright 2022-2024 Christopher A. Lupp
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
